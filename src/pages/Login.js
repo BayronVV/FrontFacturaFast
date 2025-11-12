@@ -1,6 +1,6 @@
 import { useState } from "react";
 import api from "../services/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 export default function Login() {
@@ -55,7 +55,7 @@ export default function Login() {
         <button type="submit" onClick={handleLogin}>Iniciar Sesión</button>
 
         <p className="registro-link">
-          ¿No tienes cuenta? <a href="/registro">Regístrate aquí</a>
+          ¿No tienes cuenta? <Link to="/registro">Regístrate aquí</Link>
         </p>
 
         <div className="login-footer">
