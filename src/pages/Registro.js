@@ -1,7 +1,7 @@
 // src/components/pages/Registro.js
 import { useState } from "react";
 import api from "../services/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Registro.css";
 
 export default function Registro() {
@@ -81,7 +81,7 @@ export default function Registro() {
 
         <button type="submit">Registrar Empresa</button>
         <p className="volver-link">
-          <a href="/">Volver al inicio de sesión</a>
+          <Link to="/">Volver al inicio de sesión</Link>
         </p>
       </form>
     </div>
